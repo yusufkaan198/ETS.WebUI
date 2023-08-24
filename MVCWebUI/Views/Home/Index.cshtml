@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "~/views/shared/_layout.cshtml";
+}
+@model List<StructureItem>
+<body>
+    <h1 class="baslik">ElevatorTrackingSystem</h1>
+    <table class="table table-dark table-striped">
+        <tr>
+            <th class="kolon">No</th>
+            <th class="kolon">Bina Adı</th>
+            <th class="kolon">Bina Adresi</th>
+            <th class="kolon">Yönetici Adı</th>
+            <th class="kolon">Yönetici Telefon Numarası</th>
+            <th class="kolon">Son Bakım Tarihi</th>
+            <th class="kolon">Ödenecek Tutar</th>
+            <th class="kolon">Asansör Bilgisi</th>
+        </tr>
+        
+        @foreach (var structureItem in Model)
+        {
+            <tr>
+                <td class="kolon">@structureItem.structureID</td>
+                <td class="kolon">@structureItem.structureName</td>
+                <td class="kolon">@structureItem.structureAddress</td>
+                <td class="kolon">@structureItem.managerName</td>
+                <td class="kolon">@structureItem.managerPhone</td>
+                <td class="kolon">@structureItem.lastMaintenanceDate</td>
+                <td class="kolon">@structureItem.debtInfo</td>
+                <td class="kolon">@structureItem.elevatorInfo</td>
+            </tr>
+        }
+        
+    </table>
+</body>

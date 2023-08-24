@@ -1,0 +1,40 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #272829;
+}
+
+.baslik{
+    text-align: center;
+    color: white;
+}
+
+.kolon {
+    text-align: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.bg-272829 {
+    background-color: #272829;
+}
+
+.font-23{
+    font-size: 23px;
+}
